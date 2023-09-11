@@ -29,7 +29,7 @@
             <h2>It's a me, Mario</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam blanditiis tempore ad, earum eum officia eaque aut ea quos nihil assumenda odit voluptate perspiciatis. Fugiat vitae sapiente laudantium ipsum voluptate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur ipsum natus voluptates placeat odio earum nostrum libero iure a doloremque ex praesentium ab culpa voluptatibus officiis assumenda labore, nulla illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius perferendis dolorum, dolore dolor corrupti fuga aut! Perferendis, cumque, nulla debitis necessitatibus omnis vitae magnam cum temporibus iusto non, sapiente molestiae?</p>
         </article>
-        <ul class="">
+        <ul class="images">
             <li><img src="img/thumb-1.png" alt="Mario Thumb 1"></li>
             <li><img src="img/thumb-2.png" alt="Mario Thumb 2"></li>
         </ul>
