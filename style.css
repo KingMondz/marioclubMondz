@@ -5,7 +5,9 @@ body, ul, li, h1, h2, a{
 }
 header{
     background-color: #f63232;
-    padding: 20px;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
     position: fixed;
     width: 100%;
@@ -57,6 +59,7 @@ nav ul{
 nav li{
     width: 25%;
     display: inline-block;
+    font-size: 20px;
 }
 nav li a{
     text-decoration: none;
@@ -93,6 +96,10 @@ article p{
 }
 .images li img{
     max-width: 100%;/*Which is 100% of its parent container*/
+}
+.join{
+    padding-left: 7.5px;
+    padding-right: 7.5px;
 }
 section.join{
     background: #f4f4f4;
@@ -160,3 +167,61 @@ p::after{
     content: '#./././.#';
 }
 /* the style above injects content into every <p> tag,at the end of it though.(What's added is what is between the quotes) */
+
+/* Responsive styling */
+
+@media screen and (max-width: 1400px) {   
+    .banner .welcome h2{
+        font-size: 60px;
+    }
+    nav li{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 960px) {   
+    .banner .welcome h2{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .banner .welcome{
+        position: relative;
+        text-align: center;
+        padding: 14px;
+    }
+    .banner .welcome br{
+        display: none;
+    } 
+    .banner .welcome h2{
+        font-size: 25px;
+    }
+    .banner h2 span{
+        font-size: 1em;
+    }
+    .images li{
+        width: 100%; /*This is now to make it occupy the entire viewport*/
+        margin: 20px auto; /*Here we are removing the margin(Or rather reducing them ndio zitoshee vizuri)*/
+        display: block; /*So that it can now occupy its own line entirely and sit below the other*/
+    }
+    nav li{
+        font-size: 14px;
+    }
+    header{
+        position: relative;/*This now lets us see the full pic of mario*/
+    }
+    nav{
+        top: 0;
+    }
+}
+@media screen and (max-width: 560px) {   
+    nav li{
+        font-size: 20;
+        position: relative;
+        display: block;
+        width: 100%;
+        margin: 12px 0;
+    }
+    nav{
+       top: 0; 
+    }
+}
