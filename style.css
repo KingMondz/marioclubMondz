@@ -89,6 +89,7 @@ article p{
     display: inline-block;
     width: 40%;
     margin: 20px 5%;
+    border: 3px dashed #f63232;
 }
 .images li img{
     max-width: 100%;/*Which is 100% of its parent container*/
@@ -115,3 +116,47 @@ footer{
     padding: 10px;
     text-align: center;
 }
+
+/* Pseudo Classes */
+
+nav li a:hover{
+    font-weight: bold;
+    color: #f63232;
+    position: relative;
+    top: -1px;
+}
+.images li:hover{
+    position: relative;
+    top: -0.25px;
+    border: 5px dashed #f63232;
+}
+form input:focus{
+    border: 4px dashed #4b4b4b;
+    outline: none;
+}
+form input:valid{
+    border: 4px solid #71d300;
+}
+/* nav li:first-child{
+    border: 3px solid #f63232;
+} */
+/* this syle above works, its just that it looks awful but it does a good job of demonstrating the (first-chiled) pseudo
+Also note that you may check more pseudo classes at w3 schools */
+
+/* Pseudo-Elements */
+article p::first-line{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+section.join P::first-letter{
+    font-size: 1.03em;
+    font-weight: bold;
+}
+p::selection{
+    background-color: #f63232;
+    color: white;
+}
+p::after{
+    content: '#./././.#';
+}
+/* the style above injects content into every <p> tag,at the end of it though.(What's added is what is between the quotes) */
